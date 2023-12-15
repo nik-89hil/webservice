@@ -12,12 +12,10 @@ function App() {
     <>
   
     <BrowserRouter>
-    <Header/>
     <Routes>
       <Route path='/'  element={<Home/>}/>
       
     </Routes>
-    <Footer/>
     </BrowserRouter>
   
 

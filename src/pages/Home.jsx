@@ -6,10 +6,13 @@ import img3 from '../images/modelfem.jpeg';
 import img4 from '../images/it.jpeg';
 import img5 from '../images/mountain.jpeg';
 import img6 from '../images/vaccine.jpeg';
+import Header from '../component/header';
+import Footer from '../component/Footer';
 
 const Home = () => {
   return (
     <>
+    <Header/>
 
     <div className="box">
         
@@ -109,7 +112,7 @@ const Home = () => {
     </div>
 
 
-
+    <Footer/>
 
 
     </>
