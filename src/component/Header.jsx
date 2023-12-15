@@ -1,0 +1,43 @@
+import React from 'react'
+import './style/home.css'
+import { Link, NavLink } from 'react-router-dom'
+import {motion} from 'framer-motion'
+
+const Header = () => {
+  return (
+    <>
+    <div className="navbar-box">
+
+      <motion.div
+        className='company'
+        initial={{ y:-150 }}
+        animate={{ y:0 }}
+        transition={{ ease: "easeInOut", duration: 1.4,delay:1 }}
+        > @nikwebservice.onrender.com 
+      </motion.div>
+
+
+      <ul className='nav-links'>
+       <li>
+        <NavLink to="/"> Home </NavLink>
+       </li>
+       <li>
+        <NavLink to="/about"> About </NavLink>
+       </li>
+       <li>
+        <NavLink to="/service"> Service </NavLink>
+       </li>
+       <li>
+        <NavLink to="/contact"> Contact </NavLink>
+       </li>
+      </ul>
+      
+      
+    </div>
+    
+      
+    </>
+  )
+}
+
+export default Header

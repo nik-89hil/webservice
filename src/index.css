@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--fontext);
+}
+
+
+:root {
+  --textcolor: black;
+  --cont-color:rgb(206, 206, 255);
+  --fontext:'Rethink Sans', sans-serif;
+}
+
+
+
+a{
+  text-decoration: none;
+}
