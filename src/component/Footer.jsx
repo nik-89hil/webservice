@@ -1,24 +1,17 @@
 import React from 'react'
-import './style/home.css'
+import './style/footer.css'
 
 const Footer = () => {
   return (
     <>
-    <div className="footer">
-        <div className="linker">
-            <span className='heading'>Useful Links</span>
-            <span><a className='links' href="">Home</a></span>
-            <span><a className='links' href="">About</a></span>
-            <span><a className='links' href="">Service</a></span>
-            <span><a className='links' href="">Contact</a></span>
-        </div>
-        <div className="social">
-            <span className='heading'>Social Media</span>
-            <span><a className='links' href="">github</a></span>
-            <span><a className='links' href="">linkedin</a></span>
-            <span><a className='links' href="">email</a></span>
-            <span><a className='links' href="">whatsapp</a></span>
-        </div>
+    <div className="footer-box">
+      <h2><a href="">@nikwebservice.onrender.com</a></h2>
+      <p><i className="fa-solid fa-copyright"></i> all rights are reserved || 2024</p>
+      <div className="fot-soci">
+        <p><a href=""><i className="fa-brands fa-linkedin-in"></i> LinkedIn</a></p>
+        <p><a href=""><i className="fa-brands fa-github"></i> Github</a></p>
+        <p><a href=""><i className="fa-solid fa-at"></i> Email</a></p>
+      </div>
     </div>
       
     </>

@@ -5,7 +5,8 @@
     background-color: white;
     display: flex;
     justify-content: center;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
+    z-index: +400;
 }
 
 .navbar-box .nav-links{
@@ -21,6 +22,7 @@
     position: fixed;
     top: 0;
     background-color: white;
+    z-index: +400;
 }
 
 .navbar-box a{
@@ -48,6 +50,7 @@
     font-weight: 600;
     display: block;
     text-align: center;
+    background-color: white;
     box-shadow: 2px 2px 9px blue;
     border-radius: 6px;
     padding-block: 5px;
@@ -67,7 +70,7 @@
 
 .heading{
     font-family: var(--fontext);
-    /* display: block; */
+    color: blue;
     font-weight: 600;
     font-size: larger;
     letter-spacing: 1.5px;
@@ -75,13 +78,6 @@
 
 }
 
-/* .micro{
-    color: black;
-    font-size: 15px;
-    border-bottom: 2px solid white;
-    padding-block: 2px;
-    padding-inline: 9px;
-} */
 
 
 .box{
@@ -94,7 +90,7 @@
 
 .box img{
     object-fit: cover;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -186,29 +182,6 @@
     transform: scale(1.2);
 }
 
-.footer{
-    width: 100%;
-    height: 30vh;
-    background-color: var(--cont-color);
-    font-family: var(--fontext);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    display: none;
-}
-
-.footer div{
-    max-width: 300px;
-    width: 300px;
-    margin: 5px;
-}
-
-.footer .links{
-    margin: 5px;
-}
-
-
 
 @media screen and (max-width: 768px){
 
@@ -218,9 +191,10 @@
 
     .navbar-box .nav-links,
     .company{
-        width: 95%;
+        width: 100%;
         box-shadow: none;
         font-size: medium;
+        background-color: white;
     }
 
     .company{
@@ -241,8 +215,3 @@
     
 }
 
-@media screen and (max-width: 572){
-    
-
-
-}

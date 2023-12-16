@@ -1,13 +1,11 @@
 import React from 'react'
 import {motion} from 'framer-motion';
 import img1 from '../images/frontimg.jpeg';
-import img2 from '../images/femaleimg.png';
 import img3 from '../images/modelfem.jpeg';
-import img4 from '../images/it.jpeg';
 import img5 from '../images/mountain.jpeg';
 import img6 from '../images/vaccine.jpeg';
-import Header from '../component/header';
-import Footer from '../component/Footer';
+import Header from '../component/Header.jsx';
+import Footer from '../component/Footer.jsx';
 
 const Home = () => {
   return (
