@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../component/Header.jsx'
+import Footer from '../component/Footer.jsx'
 import '../component/style/contact.css'
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom'
@@ -15,7 +16,7 @@ const Contact = () => {
         animate={{x:0}}
         transition={{ease:"easeInOut",delay:1,duration:0.7,type:"spring"}}
         >Contact us</motion.h2>
-        <p>feel free to contact, we listen you carefully.</p>
+        <p className='cont-para'>feel free to contact, we listen you carefully.</p>
         <h2 className='tool-link'><Link to={"/"}>@nikwebservice.onrender.com</Link></h2>
         <br />
        
@@ -43,7 +44,7 @@ const Contact = () => {
         
         </form>
         <br />
-        <h2>If you have any Query, Connect with us</h2>
+        <h2 style={{textAlign:"center"}}>If you have any Query, Connect with us</h2>
         <br />
         <a href="" className="social linkedin"><i className="fa-brands fa-linkedin"></i> linkedIn</a>
         <a href="" className="social whatsapp"><i className="fa-brands fa-whatsapp"></i> whatsapp</a>
@@ -51,6 +52,7 @@ const Contact = () => {
         <a href="" className="social github"><i className="fa-brands fa-github"></i> github</a>
     </div>
       
+      <Footer/>
     </>
   )
 }

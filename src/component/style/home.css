@@ -194,26 +194,53 @@
     .company{
         width: 100%;
         box-shadow: none;
-        font-size: medium;
+        font-size: 19px;
         background-color: white;
     }
 
     .company{
         width: 100%;
         box-shadow: 2px 2px 5px blue;
+        font-size: medium;
     }
     .navbar-box a{
         font-size: small;
     }
 
+    .home-head{
+        font-size:19px;
+        padding-inline: 10px;
+    }
+
     .flex-box{
-        background-color: greenyellow;
+        background-color: white;
         width: 90%;
         margin: auto;
         display: flex;
         flex-direction: column;
         user-select: none;
+        padding: 9px 5px;
     }
+
+    .flex-box >div >p{
+        font-size: 15px;
+        padding-block: 5px;
+    }
+
+    
+.flex-box div{
+   border: 2.5px solid greenyellow;
+    user-select: none;
+}
+
+
+.flex-box2{
+    width: 90%;
+}
+
+.box3{
+    width: 90%;
+}
     
 }
 

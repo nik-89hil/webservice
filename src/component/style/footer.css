@@ -41,7 +41,21 @@
 
 
 
-
+@media screen and (max-width:768px) {
+    
+    .footer-box{
+        font-size: 14px;
+    }
+    .footer-box h2 a{
+        font-size: medium;
+    }
+    .fot-soci{
+        border-radius: 15px;
+    }
+    .font-socio a{
+        font-size: 14px;
+    }
+}
 
 
 

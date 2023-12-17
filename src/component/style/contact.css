@@ -48,12 +48,6 @@
 
 
 
-
-
-
-
-
-
 .form-cont textarea{
     width: 90%;
     max-width: 90%;
@@ -98,7 +92,45 @@
 }
 
 
+@media screen and (max-width:768px) {
+    .contact-box{
+        width: 95%;
+        margin-top: 2vh;
+        box-shadow: none;
+        border: 3px solid black;
+        border-radius: 7px;
+    }
 
+    .cont-para{
+        font-size:12px;
+    }
+
+    .tool-link{
+        font-size: medium;
+    }
+    .form-cont label{
+        font-size: 15px;
+    }
+    .form-cont input,
+    .form-cont textarea{
+     width: 95%;
+     padding: 5px;
+    font-size: 14px;
+
+}
+
+.form-cont textarea{
+    width: 100%;
+    max-width: 100%;
+    height: 20vh;
+    max-height: auto;
+}
+
+
+.form-cont button{
+    font-size: 15px;
+}
+}
 
 
 

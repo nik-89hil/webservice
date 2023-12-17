@@ -16,13 +16,13 @@ const Home = () => {
         
         <img src={img1} loading='lazy'  alt="No img" />
         <br />
-        <h1>Get your website with latest tools and technologies</h1>
-        <h3>Why website is better for your bussiness?</h3>
+        <h1 className='home-head'>Get your website with latest tools and technologies</h1>
+        <h3 className='home-head'>Why website is better for your bussiness?</h3>
         <br />
 
         <div className="flex-box">
             <div className="item1">
-                <h2>Accessibility</h2>
+                <h2 classname="home-head">Accessibility</h2>
                 <p>
                     if you have startup and you want to make it available for your client
                     easily.you should have a website that connects you with your client.
@@ -30,21 +30,21 @@ const Home = () => {
                 </p>
             </div>
             <div className="item2">
-                <h2>No download</h2>
+                <h2 classname="home-head">No download</h2>
                 <p>
                     website do not take your more memory in device. they are used on any web browsers, no need for download just
                     a one click you can login and access services.
                 </p>
             </div>
             <div className="item3">
-                <h2>For personal use</h2>
+                <h2 classname="home-head">For personal use</h2>
                 <p>
                     in the world of AI, no matter what your profession is you need a website to enhance your online presence.
                     you can add your experience and services that grow your carrer and income.
                 </p>
             </div>
             <div className="item4">
-                <h2>Responsiveness and Adaptibility</h2>
+                <h2 classname="home-head">Responsiveness and Adaptibility</h2>
                 <p>
                     website are adaptable and responsive nature they can look best
                     across all devices whatever you client has your website automatically
@@ -52,21 +52,21 @@ const Home = () => {
                 </p>
             </div>
             <div className="item3">
-                <h2>For personal use</h2>
+                <h2 classname="home-head">For personal use</h2>
                 <p>
                     in the world of AI, no matter what your profession is you need a website to enhance your online presence.
                     you can add your experience and services that grow your carrer and income.
                 </p>
             </div>
             <div className="item3">
-                <h2>For personal use</h2>
+                <h2 classname="home-head">For personal use</h2>
                 <p>
                     in the world of AI, no matter what your profession is you need a website to enhance your online presence.
                     you can add your experience and services that grow your carrer and income.
                 </p>
             </div>
             <div className="item3">
-                <h2>low cost</h2>
+                <h2 classname="home-head">low cost</h2>
                 <p>
                     in the world of AI, no matter what your profession is you need a website to enhance your online presence.
                     you can add your experience and services that grow your carrer and income.
@@ -79,6 +79,7 @@ const Home = () => {
 
     <div className="box2">
         <motion.h1
+        className='home-head'
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{ease:"easeInOut",duration:2,repeat:Infinity}}
@@ -100,8 +101,8 @@ const Home = () => {
         </div>
         <br />
 
-        <h1>Free templates और customise it...</h1>
-        <h2>आप किसी भी भाषा में अपनी कल्पना को वास्तविक वेबसाइट में बदल सकते हैं|</h2>
+        <h1 className='home-head'>Free templates और customise it...</h1>
+        <h2 className='home-head'>आप किसी भी भाषा में अपनी कल्पना को वास्तविक वेबसाइट में बदल सकते हैं|</h2>
         <br />
         <div className="box3">
             <img loading='lazy' src="https://marketplace.canva.com/EAE6WTyrSQ0/2/0/1600w/canva-light-beige-sleek-and-simple-blogger-personal-website--7Q4-7tyJj4.jpg" alt="" />

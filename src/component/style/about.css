@@ -8,9 +8,6 @@
 }
 
 
-
-
-
 .touch a{
     color: blue;
     text-decoration: underline;
@@ -49,12 +46,16 @@
     width: 100%;
     margin: auto;
     margin-top: 25vh;
-    padding-inline: 5px;
+    padding-inline: 10px;
     padding-block: 3vh;
 }
 
+.about-cont h2{
+    font-size: medium;
+}
+
 .about-para .para-img{
-    width: 200px;
+    width: 200px; 
     height: 200px;
     border-radius: 100%;
 
