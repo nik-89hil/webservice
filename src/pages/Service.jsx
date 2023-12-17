@@ -12,7 +12,6 @@ const Service = () => {
   return (
     <>
     <Header/>
-    <br />
     <div className="service-box">
     <motion.h2
     style={{color:'blue'}}
