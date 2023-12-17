@@ -142,3 +142,33 @@
 .prodCard .imager img:hover{
     transform: scale(1.2);
 }
+
+
+@media screen and (max-width:768px) {
+    .service-box{
+        width: 95%;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 5vh;
+        padding-block: 5vh;
+        padding-inline: 5px;
+        font-size: 14px;
+    }
+
+    .service-intro{
+        text-align: justify;
+    }
+.service-flex{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 4vh;
+    padding-block: 2vh;
+}
+
+    
+}

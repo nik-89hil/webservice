@@ -3,7 +3,7 @@ import Service from './Service'
 import '../component/style/service.css'
 import {motion} from 'framer-motion'
 import ProdCard from '../component/ProdCard.jsx'
-
+import Footer from '../component/Footer.jsx'
 
 
 
@@ -36,6 +36,9 @@ const Product = () => {
 
     </motion.div>
     </div>
+
+
+    <Footer/>
       
     </>
   )

@@ -11,7 +11,7 @@ const Header = () => {
       <motion.div
         className='company'
         initial={{ y:-150 }}
-        animate={{ y:0 }}
+        animate={{ y:-5 }}
         transition={{ ease: "easeInOut", duration: 1.4,delay:1 }}
         > @nikwebservice.onrender.com 
       </motion.div>

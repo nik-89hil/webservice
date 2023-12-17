@@ -3,6 +3,7 @@ import Service from './Service'
 import '../component/style/service.css'
 import Cards from '../component/Cards'
 import {motion} from 'framer-motion'
+import Footer from '../component/Footer.jsx'
 
 const Tools = () => {
     setTimeout(()=>{
@@ -15,7 +16,9 @@ const Tools = () => {
     <div className="service-flex">
     <Cards/>
     </div>
-      
+
+
+      <Footer/>
     </>
   )
 }

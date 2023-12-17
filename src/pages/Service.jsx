@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../component/Header'
+import Header from '../component/Header.jsx'
 import {motion} from 'framer-motion'
 import '../component/style/service.css'
 import serviceimg from '../images/service.jpeg'
@@ -7,7 +7,7 @@ import {NavLink} from 'react-router-dom'
 
 const Service = () => {
   setTimeout(()=>{
-    window.scrollBy(0,500)
+    window.scrollBy(0,700)
   },3000)
   return (
     <>
@@ -21,13 +21,7 @@ const Service = () => {
     transition={{ease:"easeInOut",duration:1,delay:1,type:"spring"}}
     >#Services, </motion.h2>
     <p>we provides to you.</p>
-    <br />
-    <motion.img
-    initial={{opacity:0.1}}
-    animate={{opacity:1}}
-    transition={{ease:"easeIn",delay:.1,duration:1}}
-    loading='lazy' src={serviceimg} className='serviceimg' alt="" />
-    <br />
+
     <br />
     <motion.p className="service-intro"
     initial={{opacity:0.2}}
@@ -41,15 +35,22 @@ const Service = () => {
         Culpa earum quisquam impedit, molestias ullam animi ipsa itaque nihil asperiores distinctio excepturi! Cumque vero optio eos quisquam accusamus quos molestiae a, tempora consequuntur voluptatibus minus accusantium laudantium illum numquam?
     </motion.p>
     <br />
+    <motion.img
+    initial={{opacity:0.1}}
+    animate={{opacity:1}}
+    transition={{ease:"easeIn",delay:.1,duration:1}}
+    loading='lazy' src={serviceimg} className='serviceimg' alt="" />
+    <br />
     <h2 className='heading'>Latest Website Tools and Technologies, we used for website creation.</h2>
     <p className='service-intro'>connect your application with latest tools, so you can be a future ready.</p>
     <br />
+    <h2 className='heading'>#Checkout</h2>
     <h2 className='tool-link'>/<NavLink to={"/service/tools-technology"}>Tools and Technologies</NavLink> / <NavLink to={"/service/products"}>Products</NavLink></h2>
     <br />
    
-   
-
     </div>
+
+    
       
     </>
   )

@@ -1,9 +1,10 @@
 import React from 'react'
-import Header from '../component/Header'
+import Header from '../component/Header.jsx'
 import '../component/style/about.css'
 import { Link } from 'react-router-dom'
 import aboutimg from '../images/about.jpeg'
 import {motion} from 'framer-motion'
+import Fotter from '../component/Footer.jsx'
 
 const About = () => {
     
@@ -44,7 +45,9 @@ const About = () => {
         </div>
     </motion.div>
     </div>
-      
+
+  
+      <Fotter/>
     </>
   )
 }
