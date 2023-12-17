@@ -13,6 +13,8 @@ const Tools = () => {
     <>
     <Service/>
     
+    <br />
+    <h2 style={{textAlign:"center"}}>Have a look..</h2>
     <div className="service-flex">
     <Cards/>
     </div>

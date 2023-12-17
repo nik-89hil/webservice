@@ -115,6 +115,10 @@
     padding-inline: 5px;
 }
 
+.prod-head{
+    text-decoration: underline;
+    color: blue;
+}
 
 .prodCard{
     width: 300px;
@@ -169,6 +173,16 @@
     margin-top: 4vh;
     padding-block: 2vh;
 }
+.prod-grid{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
 
+.prodintro{
+    font-size: 14px;
+}
     
 }

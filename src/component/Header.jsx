@@ -1,6 +1,6 @@
 import React from 'react'
 import './style/home.css'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import {motion} from 'framer-motion'
 
 const Header = () => {
