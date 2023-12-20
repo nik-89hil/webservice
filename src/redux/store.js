@@ -18,7 +18,7 @@ const rootReducer = combineReducers({
 
 const store = configureStore({
     reducer:rootReducer,
-    devTools:true,
+    devTools:false,
     middleware: ()=>[thunk]
 });
 
