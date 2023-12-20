@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {motion} from 'framer-motion';
 import img1 from '../images/frontimg.jpeg';
 import img3 from '../images/modelfem.jpeg';
@@ -6,8 +6,19 @@ import img5 from '../images/mountain.jpeg';
 import img6 from '../images/vaccine.jpeg';
 import Header from '../component/Header.jsx';
 import Footer from '../component/Footer.jsx';
+import {useDispatch, useSelector} from 'react-redux'
+import  {GETNIK} from '../redux/action/nikweb.js'
 
 const Home = () => {
+    const dispatch = useDispatch();
+    const {data,loading,err} = useSelector((state)=>state.nikweb);
+
+
+    useEffect(()=>{
+        dispatch(GETNIK())
+    },[])
+
+
   return (
     <>
     <Header/>
@@ -37,7 +48,7 @@ const Home = () => {
                 </p>
             </div>
             <div className="item3">
-                <h2 classname="home-head">For personal use</h2>
+                <h2 classname="home-head">Personal</h2>
                 <p>
                     in the world of AI, no matter what your profession is you need a website to enhance your online presence.
                     you can add your experience and services that grow your carrer and income.
@@ -52,24 +63,22 @@ const Home = () => {
                 </p>
             </div>
             <div className="item3">
-                <h2 classname="home-head">For personal use</h2>
+                <h2 classname="home-head">Improve credibility</h2>
                 <p>
-                    in the world of AI, no matter what your profession is you need a website to enhance your online presence.
-                    you can add your experience and services that grow your carrer and income.
+                Having a professional website is critical to assuage these concerns and leave a positive impression. This will allow you to build your credibility while effectively engaging people and giving them enough trust in you to make a purchase.
                 </p>
             </div>
             <div className="item3">
-                <h2 classname="home-head">For personal use</h2>
+                <h2 classname="home-head">Access the power of search</h2>
                 <p>
-                    in the world of AI, no matter what your profession is you need a website to enhance your online presence.
-                    you can add your experience and services that grow your carrer and income.
+                By creating a website that ticks the right SEO boxes, you can drive traffic to your website from people searching for what you have to offer. This will improve your business awareness and generate leads that can be turned into paying customers.
                 </p>
             </div>
             <div className="item3">
-                <h2 classname="home-head">low cost</h2>
+                <h2 classname="home-head">Low Cost</h2>
                 <p>
-                    in the world of AI, no matter what your profession is you need a website to enhance your online presence.
-                    you can add your experience and services that grow your carrer and income.
+                    In the world of AI, no matter what your profession is you need a website to enhance your online presence.
+                    you can add your experience and services that grow your carrer and income at low cost.
                 </p>
             </div>
         </div>

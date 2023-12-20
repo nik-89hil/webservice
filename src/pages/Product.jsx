@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Service from './Service'
 import '../component/style/service.css'
 import {motion} from 'framer-motion'
 import ProdCard from '../component/ProdCard.jsx'
 import Footer from '../component/Footer.jsx'
-
-
+import {useDispatch, useSelector} from 'react-redux'
+import {getProduct} from '../redux/action/product.js'
 
 const Product = () => {
-  setTimeout(()=>{
-    window.scrollBy(0,300)
-},1000)
+  const dispatch = useDispatch();
+  const {loading,data,err} = useSelector((state)=>state.product);
+  const product = data.data;
+
+  useEffect(()=>{
+    dispatch(getProduct())
+  },[])
+
+
+
   return (
     <>
     <Service/>
@@ -25,13 +32,19 @@ const Product = () => {
     transition={{ease:"easeIn",delay:0.2,duration:5}}
     >
 
-      <ProdCard/>
-      <ProdCard/>
-      <ProdCard/>
-      <ProdCard/>
-      <ProdCard/>
-      <ProdCard/>
-      <ProdCard/>
+      {
+        loading?"Loading products...":null
+      }
+      {
+        data.success?(
+          product.map((ele,idx)=>{
+            return <ProdCard key={idx}  name={ele.prodname} about={ele.prodabout} source={ele.prodimg}/>
+          
+          })
+        ):null
+      }
+    
+     
       
 
     </motion.div>

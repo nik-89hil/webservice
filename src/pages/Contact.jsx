@@ -4,8 +4,48 @@ import Footer from '../component/Footer.jsx'
 import '../component/style/contact.css'
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 const Contact = () => {
+  const [client,setClient] = React.useState({
+    clientemail:"",
+    phone:"",
+    description:""
+  });
+
+
+  const handleclient = (e)=>{
+    e.preventDefault();
+    setClient({
+      ...client,
+      [e.target.name]:e.target.value
+    })
+  }
+
+  const submitclient = async(e) =>{
+    e.preventDefault();
+    const result = await axios({
+      url:"https://webserviceapi.onrender.com/api/client/connect",
+      method:"post",
+      data:client
+    });
+    if(result.data.success){
+      setClient({
+        clientemail:"",
+        phone:"",
+        description:""
+      })
+    }
+    console.log(result,"from client server")
+  }
+
+
+
+
+
+
+
+
   return (
     <>
     <Header/>
@@ -24,21 +64,21 @@ const Contact = () => {
         <form className='form-cont'>
            <p>
               <label htmlFor="clientemail">Your Email</label><br />
-              <input type="email" required placeholder='email@gmail.com' name="clientemail" id="clientemail" />
+              <input type="email" name="clientemail"  onChange={handleclient} required placeholder='email@gmail.com' />
            </p>
 
            <p>
               <label htmlFor="phone">Your Phone Number or Whatsapp</label><br />
-              <input type="tel" required name="phone" placeholder='9#########8' id="phone" />
+              <input type="tel" name="phone" onChange={handleclient} required  placeholder='9#########8' id="phone" />
            </p>
 
             <p>
                 <label htmlFor="description">Tell us about your Project and Idea. so we can give you best result.</label>
                 <br />
-                <textarea name="description" required placeholder='write..' id="description" cols="30" rows="10"></textarea>
+                <textarea name="description" onChange={handleclient} required placeholder='write..' id="description" cols="30" rows="10"></textarea>
             </p>
 
-            <button type="submit">Submit Form</button>
+            <button type="submit" onClick={submitclient}>Submit Form</button>
             <button type="reset">Reset Form</button>
         
         
