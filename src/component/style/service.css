@@ -9,13 +9,10 @@
 
 .card{
     width: 280px;
-    height: 350px;
+    height: auto;
     text-align: center;
     padding-block: 4vh;
     padding-inline: 5px;
-    white-space: wrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     transition: linear 1s ;
     margin: 5px;
     border-radius: 5px;
