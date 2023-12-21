@@ -89,13 +89,10 @@ const Contact = () => {
 
             <button type="submit" onClick={submitclient}>Submit Form</button>
             <button type="reset">Reset Form</button>
-
-            <p className='message'>{message}</p>
-        
         
         </form>
         <br />
-        <h2 style={{textAlign:"center"}}>If you have any Query, Connect with us</h2>
+        <p className='message'>{message}</p>
         <br />
         <a href="" className="social linkedin"><i className="fa-brands fa-linkedin"></i> linkedIn</a>
         <a href="" className="social whatsapp"><i className="fa-brands fa-whatsapp"></i> whatsapp</a>
