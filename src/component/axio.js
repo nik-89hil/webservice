@@ -1,1 +1,1 @@
-export const rooturlserver = "http://localhost:8080"
+export const rooturlserver = "https://webserviceapi.onrender.com"
