@@ -4,6 +4,7 @@ import axios from 'axios';
 import Client from '../component/Client'
 import { useDispatch, useSelector } from 'react-redux'
 import { ADMIN } from '../redux/action/admin'
+import {rooturlserver} from '../component/axio'
 
 
 const Admin = () => {
@@ -11,8 +12,6 @@ const Admin = () => {
     const [service, setService] = React.useState(false);
     const dispatch = useDispatch();
     const { data, err, loading } = useSelector((state) => state.admin);
-
-    // console.log(data[0].data[0].token, "--admin---")
 
 
     const [admin, setAdmin] = React.useState({
@@ -60,30 +59,26 @@ const Admin = () => {
 
     const submitadmin = async (e) => {
         e.preventDefault();
-        console.log("===before submit")
         dispatch(ADMIN(admin))
     }
 
     const submitproduct = async (e) => {
         e.preventDefault();
-        console.log(product, "-product")
         const result = await axios({
-            url: "https://webserviceapi.onrender.com/api/admin/product",
+            url: `${rooturlserver}/api/admin/product`,
             method: "post",
             data: product
         })
-        console.log(result, "from server")
     }
 
     const submittool = async (e) => {
         e.preventDefault();
-        console.log(tool, "-tool")
         const result = await axios({
-            url: "https://webserviceapi.onrender.com/api/admin/tools",
+            url: `${rooturlserver}/api/admin/tools`,
             method: "post",
             data: tool
         })
-        console.log(result, "from server")
+
     }
 
 

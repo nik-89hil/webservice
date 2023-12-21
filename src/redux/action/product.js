@@ -1,7 +1,7 @@
 export const REQ_PRODUCT = "REQ_PRODUCT";
 export const SUCC_PRODUCT = "SUCC_PRODUCT";
 export const FAIL_PRODUCT = "FAIL_PRODUCT";
-
+import {rooturlserver} from '../../component/axio'
 import axios from 'axios'
 
 const req = ()=>{
@@ -28,9 +28,8 @@ const fail = (err) =>{
 export const getProduct = () =>{
     return(dispatch)=>{
         dispatch(req);
-        console.log("reached")
         axios({
-            url:"https://webserviceapi.onrender.com/api/admin/product",
+            url:`${rooturlserver}/api/admin/product`,
             method:"get",
             headers:{
                 "Content-Type":"application/json"

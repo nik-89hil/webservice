@@ -25,7 +25,7 @@ const Service = () => {
     <p>we provides to you.</p>
 
     <br />
-    <motion.p className="service-intro"
+    <motion.div className="service-intro"
     initial={{opacity:0.2}}
     animate={{opacity:1}}
     transition={{duration:.5,delay:1}}
@@ -45,7 +45,7 @@ const Service = () => {
         data[0].success && data[0].data[0].service3
       }
        
-    </motion.p>
+    </motion.div>
     <br />
     <motion.img
     initial={{opacity:0.1}}

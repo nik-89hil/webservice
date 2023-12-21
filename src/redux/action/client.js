@@ -1,7 +1,7 @@
 export const REQ_CLIENT = "REQ_CLIENT";
 export const SUCC_CLIENT = "SUCC_CLIENT";
 export const FAIL_CLIENT = "FAIL_CLIENT";
-
+import {rooturlserver} from '../../component/axio'
 import axios from 'axios'
 
 const req = ()=>{
@@ -28,9 +28,8 @@ const fail = (err) =>{
 export const getClient = (token) =>{
     return(dispatch)=>{
         dispatch(req);
-        console.log(token,"reached")
         axios({
-            url:"https://webserviceapi.onrender.com/api/admin/getclient",
+            url:`${rooturlserver}/api/admin/getclient`,
             method:"post",
             headers:{
                 "Content-Type":"application/json",

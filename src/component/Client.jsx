@@ -9,7 +9,6 @@ const Client = () => {
     
     const {data , loading,err} = useSelector((state)=>state.client)
 
-    console.log(data[0])
 
     useEffect(()=>{
         dispatch(getClient(token))

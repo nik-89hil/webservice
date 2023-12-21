@@ -1,0 +1,1 @@
+export const rooturlserver = "http://localhost:8080"

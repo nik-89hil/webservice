@@ -5,6 +5,7 @@ import '../component/style/contact.css'
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import {rooturlserver} from '../component/axio.js'
 
 const Contact = () => {
   const [client,setClient] = React.useState({
@@ -27,7 +28,7 @@ const Contact = () => {
   const submitclient = async(e) =>{
     e.preventDefault();
     const result = await axios({
-      url:"https://webserviceapi.onrender.com/api/client/connect",
+      url:`${rooturlserver}/api/client/connect`,
       method:"post",
       data:client
     });
@@ -44,7 +45,6 @@ const Contact = () => {
       },3000)
       
     }
-    console.log(result,"from client server")
   }
 
 
@@ -63,7 +63,8 @@ const Contact = () => {
         initial={{x:-900}}
         animate={{x:0}}
         transition={{ease:"easeInOut",delay:1,duration:0.7,type:"spring"}}
-        >Contact us</motion.h2>
+        >Contact us </motion.h2>
+        <span className='message'> "{message}" </span>
         <p className='cont-para'>feel free to contact, we listen you carefully.</p>
         <h2 className='tool-link'><Link to={"/"}>@nikwebservice.onrender.com</Link></h2>
         <br />
@@ -91,13 +92,8 @@ const Contact = () => {
             <button type="reset">Reset Form</button>
         
         </form>
+    
         <br />
-        <p className='message'>{message}</p>
-        <br />
-        <a href="" className="social linkedin"><i className="fa-brands fa-linkedin"></i> linkedIn</a>
-        <a href="" className="social whatsapp"><i className="fa-brands fa-whatsapp"></i> whatsapp</a>
-        <a href="" className="social email"><i className="fa-solid fa-at"></i> email</a>
-        <a href="" className="social github"><i className="fa-brands fa-github"></i> github</a>
     </div>
       
       <Footer/>

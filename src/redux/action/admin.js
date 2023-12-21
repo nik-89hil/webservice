@@ -1,7 +1,7 @@
 export const REQ_ADMIN = "REQ_ADMIN";
 export const SUCC_ADMIN = "SUCC_ADMIN";
 export const FAIL_ADMIN = "FAIL_ADMIN";
-
+import {rooturlserver} from '../../component/axio'
 import axios from 'axios'
 
 const req = ()=>{
@@ -28,9 +28,8 @@ const fail = (err) =>{
 export const ADMIN = (admin) =>{
     return(dispatch)=>{
         dispatch(req);
-        console.log("reached")
         axios({
-            url:"https://webserviceapi.onrender.com/api/admin/login",
+            url:`${rooturlserver}/api/admin/login`,
             method:"post",
             data:{
                 ...admin

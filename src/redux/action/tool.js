@@ -1,7 +1,7 @@
 export const REQ_TOOL = "REQ_TOOL";
 export const SUCC_TOOL = "SUCC_TOOL";
 export const FAIL_TOOL = "FAIL_TOOL";
-
+import {rooturlserver} from '../../component/axio'
 import axios from 'axios'
 
 const req = ()=>{
@@ -29,7 +29,7 @@ export const getTool = () =>{
     return(dispatch)=>{
         dispatch(req);
         axios({
-            url:"https://webserviceapi.onrender.com/api/admin/tools",
+            url:`${rooturlserver}/api/admin/tools`,
             method:"get",
             headers:{
                 "Content-Type":"application/json"

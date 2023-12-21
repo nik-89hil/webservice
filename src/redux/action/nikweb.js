@@ -1,7 +1,7 @@
 export const REQ_NIK = "REQ_NIK";
 export const SUCC_NIK = "SUCC_NIK";
 export const FAIL_NIK = "FAIL_NIK";
-
+import {rooturlserver} from '../../component/axio'
 import axios from 'axios'
 
 const req = ()=>{
@@ -29,7 +29,7 @@ export const GETNIK = () =>{
     return(dispatch)=>{
         dispatch(req);
         axios({
-            url:"https://webserviceapi.onrender.com/",
+            url:`${rooturlserver}/`,
             method:"get",
         }).then((data)=>{
             dispatch(succ(data.data))
