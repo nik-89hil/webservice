@@ -91,6 +91,12 @@
     color: black;
 }
 
+.message{
+    padding: 5px 9px;
+    background-color: rgb(201, 247, 201);
+    border-radius: 5px;
+}
+
 
 @media screen and (max-width:768px) {
     .contact-box{

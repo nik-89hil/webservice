@@ -13,6 +13,8 @@ const Contact = () => {
     description:""
   });
 
+  const [message,setMessage] = React.useState("")
+
 
   const handleclient = (e)=>{
     e.preventDefault();
@@ -30,6 +32,7 @@ const Contact = () => {
       data:client
     });
     if(result.data.success){
+      setMessage("we received your request, contact you soon..")
       setClient({
         clientemail:"",
         phone:"",
@@ -77,6 +80,7 @@ const Contact = () => {
                 <br />
                 <textarea name="description" onChange={handleclient} required placeholder='write..' id="description" cols="30" rows="10"></textarea>
             </p>
+            <p className='message'>{message} jfalksdj fk asjfks fjskl</p>
 
             <button type="submit" onClick={submitclient}>Submit Form</button>
             <button type="reset">Reset Form</button>
