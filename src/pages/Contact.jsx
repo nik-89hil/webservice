@@ -33,11 +33,16 @@ const Contact = () => {
     });
     if(result.data.success){
       setMessage("we received your request, contact you soon..")
-      setClient({
-        clientemail:"",
-        phone:"",
-        description:""
-      })
+      setTimeout(()=>{
+        window.location.href ="/";
+        setClient({
+          clientemail:"",
+          phone:"",
+          description:""
+        })
+        setMessage("")
+      },3000)
+      
     }
     console.log(result,"from client server")
   }
@@ -80,10 +85,12 @@ const Contact = () => {
                 <br />
                 <textarea name="description" onChange={handleclient} required placeholder='write..' id="description" cols="30" rows="10"></textarea>
             </p>
-            <p className='message'>{message}</p>
+            
 
             <button type="submit" onClick={submitclient}>Submit Form</button>
             <button type="reset">Reset Form</button>
+
+            <p className='message'>{message}</p>
         
         
         </form>
