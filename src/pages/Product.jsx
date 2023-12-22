@@ -43,6 +43,7 @@ const Product = () => {
           })
         ):null
       }
+      <h2 style={{textAlign:"center"}}>and more, add soon...</h2>
     
      
       
