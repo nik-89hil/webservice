@@ -29,7 +29,7 @@ export const GETNIK = () =>{
     return(dispatch)=>{
         dispatch(req);
         axios({
-            url:`${rooturlserver}/`,
+            url:`${rooturlserver}`,
             method:"get",
         }).then((data)=>{
             dispatch(succ(data.data))
