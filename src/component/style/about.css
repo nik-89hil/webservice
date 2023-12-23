@@ -29,7 +29,7 @@
     width: 300px;
     height: 300px;
     border-radius: 100%;
-    border: 3px solid black;
+    border: 3px dashed blue;
     margin: 5px;
 
 }
