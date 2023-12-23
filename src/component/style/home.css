@@ -24,6 +24,14 @@
     z-index: +400;
 }
 
+.logo-img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+
+
 .navbar-box a {
     color: black;
     margin: 5px;
